@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { BsTelephoneFill } from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -39,7 +39,7 @@ export const ContactList = () => {
             return (
               <ContactItem key={id}>
                 <ContactNameBox>
-                  <BsFillPersonLinesFill style={{ color: '#2874A6' }} />
+                  <BsTelephoneFill style={{ color: '#2874A6' }} />
                   {name} : {phone}
                 </ContactNameBox>
                 <Button onClick={() => dispatch(deleteContact(id))}>
